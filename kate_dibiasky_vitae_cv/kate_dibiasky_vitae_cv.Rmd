@@ -1,0 +1,150 @@
+---
+name: Kate
+surname: Dibiasky
+position: "PhD Candidate"
+profilepic: "img/kate.jpeg"
+address: "School of Astronomy, Michigan State University"
+# phone: +1 22 3333 4444
+# www: mariecurie.com
+email: "k.dibiasky@gmail.com"
+twitter: DontLookUpFilm
+github: shaziaruybal/automate-cv-rmd
+# linkedin: mariecurie
+aboutme: "I have recently discovered Comet Dibiasky that is approximately 10-15km in size, and based on my orbital calculations is estimated to strike Earth in 6 months and 14 days"
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(here)
+```
+
+```{r functions}
+readExcelSheets <- function(filename){
+  # read all sheets in .xlsx 
+  all <- readxl::excel_sheets(filename)
+  
+  # import each sheet into a list using readxl::read_excel
+  list <- lapply(all, function(x) readxl::read_excel(filename, sheet = x))
+  
+  # save sheet name for each sheet (list)
+  names(list) <- all
+  
+  # breaks up list and creates a dataframe for each sheet with df names matching sheet names
+  list2env(list, envir = .GlobalEnv)
+}
+```
+
+```{r load-data, message=F, results='hide'}
+filename <- here::here("kate_dibiasky_vitae_cv", "dibiasky_vitae_data.xlsx")
+
+readExcelSheets(filename)
+```
+
+<!-- # Some stuff about me -->
+
+<!--  * I poisoned myself doing research. -->
+<!--  * I was the first woman to win a Nobel prize -->
+<!--  * I was the first person and only woman to win a Nobel prize in two different sciences. -->
+
+# Education
+I am a Teaching Assistant in the Astronomy Department and am passionate about playing a positive role in shaping the new generation of astronomers. 
+
+
+```{r}
+# library(tibble)
+# tribble(
+#   ~ Degree, ~ Year, ~ Institution, ~ Where,
+#   "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
+#   "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
+#   "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
+# ) %>% 
+#    detailed_entries(Degree, Year, Institution, Where)
+
+education %>% 
+  detailed_entries(what = degree,
+                   when = year,
+                   with = institution,
+                   where = where,
+                   why = details)
+```
+
+# Research experience
+```{r}
+research %>% 
+  detailed_entries(what = role,
+                   when = dates,
+                   with = institution,
+                   where = where,
+                   why = details)
+```
+
+
+# Industry experience
+```{r}
+industry %>% 
+  detailed_entries(what = role,
+                   when = dates,
+                   with = institution,
+                   where = where,
+                   why = details)
+```
+
+# Leadership experience
+```{r}
+leadership %>% 
+  detailed_entries(what = role,
+                   when = dates,
+                   with = institution,
+                   where = where,
+                   why = details)
+```
+
+\newpage
+
+# Language skills
+```{r}
+skills %>% 
+  brief_entries(when = skill) # ,
+                # with = level)
+```
+
+<!-- # Nobel Prizes -->
+
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~Year, ~Type, ~Desc, -->
+<!--   1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel", -->
+<!--   1911, "Chemistry", "Awarded for the discovery of radium and polonium" -->
+<!-- ) %>% -->
+<!-- brief_entries( -->
+<!--   glue::glue("Nobel Prize in {Type}"), -->
+<!--   Year, -->
+<!--   Desc -->
+<!-- ) -->
+<!-- ``` -->
+
+# Publications
+
+```{r}
+# library(dplyr)
+# knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+# 
+# bibliography_entries("packages.bib") %>%
+#   arrange(desc(author$family), issued)
+# 
+bibliography_entries(here("kate_dibiasky_vitae_cv", "papers.bib")) 
+```
+
+## Another way to display publications is using R Markdown. You can also use latex commands throughout the document:
+
+\setlength{\leftskip}{0cm}
+**2022**
+
+\setlength{\leftskip}{1cm}
+[**Dibiasky, K.** and Mindy, R. (2022). *Discovery of a novel comet, Comet Dibiasky, heading towards Earth.* Science.](https://media.giphy.com/media/q9CS6tp1oM45pmj19U/giphy.gif) 
