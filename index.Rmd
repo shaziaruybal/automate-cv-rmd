@@ -140,7 +140,7 @@ class: center, middle
 
 ---
 
-class: inverse, center, middle
+class: inverse, center
 # `r fontawesome::fa("chalkboard")`
 # Today we will cover:
 
@@ -152,15 +152,23 @@ class: inverse, center, middle
 
 --
 
+.left-column[
 .pull-left[
-.center[
 ### [`r icon::fa("github")` Materials](https://github.com/shaziaruybal/automate-cv-rmd)
 ]]
 
-.pull-right[
-.center[
+.right-column[
+
+.pull-left[
+
 ### [`r icon::fa("images")` Slides](http://shaziaruybal.github.io/automate-cv-rmd) 
-]]
+]
+
+.pull-right[
+### [`r icon::fa("youtube")` Recording](https://youtu.be/Fc1RwRskk08) 
+]
+
+]
 
 ---
 
@@ -223,7 +231,7 @@ name: packages
 --
   - `vitae` was easier to use and implement, if you are a beginner I would recommend using `vitae`. 
 
-  - The materials and slides for this workshop can be found at [github.com/shaziaruybal/automate-cv-rmd](https://github.com/shaziaruybal/automate-cv-rmd) so feel free to come back to them on your own time. This includes the debugging steps that are necessary to get `datadrivencv` to build.
+  - The materials and slides for this workshop can be found at [github.com/shaziaruybal/automate-cv-rmd](https://github.com/shaziaruybal/automate-cv-rmd) so feel free to come back to them on your own time. This includes the debugging steps that are necessary to get `datadrivencv` to build. The recording of the talk is on [`r icon::fa("youtube")` Youtube](https://youtu.be/Fc1RwRskk08).
 
 ---
 class: inverse, top
@@ -1343,5 +1351,6 @@ class: middle, center, inverse
 
 .footnote[
 [`r fontawesome::fa("image")` Slides](https://shaziaruybal.github.io/automate-cv-rmd/)  
+[`r icon::fa("youtube")` Recording](https://youtu.be/Fc1RwRskk08)   
 [`r fontawesome::fa("github")` Workshop materials](https://github.com/shaziaruybal/automate-cv-rmd)
 ]
