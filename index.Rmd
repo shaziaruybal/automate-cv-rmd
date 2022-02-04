@@ -820,10 +820,6 @@ class: center
 
 --
 
-- Free Code Camp Talk: Making A Data Driven CV With RMarkdown by Bryan Jenks, watch the video at [youtube.com/watch?v=cMlRAiQUdD8](https://www.youtube.com/watch?v=cMlRAiQUdD8)
-
---
-
 - The `vitae` GitHub page has lots of examples of "`vitae in the wild`", check it out for inspo! https://github.com/mitchelloharawild/vitae 
 
 .footnote[*Not an exhaustive list!*]
