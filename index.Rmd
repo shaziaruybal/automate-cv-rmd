@@ -62,7 +62,7 @@ meta() %>%
       "Presented at the R-Ladies Melbourne meetup February 2022."
     ),
     url = "https://shaziaruybal.github.io/automate-cv-rmd/",
-    image = "https://github.com/shaziaruybal/automate-cv-rmd/blob/main/img/social-share-card.png",
+    image = "https://shaziaruybal.github.io/automate-cv-rmd/img/social-share-card.png",
     image_alt = paste(
       "Title slide of Automate your CV using R Markdown: Easy as 1, 2, knit!", 
       "presented at the R-Ladies Melbourne meetup February 2022 by Shazia Ruybal-Pesántez"
