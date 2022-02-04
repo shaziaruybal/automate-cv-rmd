@@ -403,6 +403,10 @@ install.packages("tinytex")
 tinytex::install_tinytex()
 ```
 
+Load the library
+```{r eval=F}
+library(vitae)
+```
 
 In the RStudio IDE, create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template`
 ]
