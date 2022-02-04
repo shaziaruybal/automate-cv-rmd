@@ -50,6 +50,7 @@ style_duo_accent(
 xaringanExtra::use_scribble()
 xaringanExtra::use_panelset()
 xaringanExtra::use_clipboard()
+xaringanExtra::use_share_again()
 ```
 
 ```{r metathis, echo=FALSE}
