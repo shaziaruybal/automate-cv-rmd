@@ -439,7 +439,7 @@ class: inverse, center
 class: top, center
 
 <video width="1530" height="610" controls>
-  <source src="img/vitae-1-2-knit.mp4" type="video/mp4"> 
+  <source src="img/vitae-1-2-knit-highres.mp4" type="video/mp4"> 
 </video>
 
 ---
