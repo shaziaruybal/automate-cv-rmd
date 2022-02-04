@@ -1,0 +1,22 @@
+/*-- Persistent link in footer --*/
+/* https://github.com/rstudio-education/teaching-in-production/blob/master/slides/assets/css/my-theme.css */
+
+a.footer-link {
+    position:         absolute;
+    bottom:           -5px;
+    right:            0px;
+    left:             75px;
+    height:           40px;
+    width:            1210px;
+    color:            #562457;
+    /*opacity:          0.75;*/
+    background-color: none;
+    font-size:        0.7em;
+    border-bottom:    none;
+    text-align:       left;
+}
+
+.inverse a.footer-link {
+  color:            white;
+  border-bottom:    none;
+}
