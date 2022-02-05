@@ -3,11 +3,11 @@ Go from data to professional CV using R Markdown. This repository stores the sli
 
 ![](https://shaziaruybal.github.io/automate-cv-rmd/img/social-share-card.png)
 
-#### <i class="fas fa-images"></i> View the slides at [shaziaruybal.github.io/automate-cv-rmd](https://shaziaruybal.github.io/automate-cv-rmd)
+#### 👀 View the slides at [shaziaruybal.github.io/automate-cv-rmd](https://shaziaruybal.github.io/automate-cv-rmd)
 
-#### <i class="fas fa-youtube"></i> Watch the talk recording on [Youtube](https://youtu.be/Fc1RwRskk08)
+#### 🎥 Watch the talk recording on [Youtube](https://youtu.be/Fc1RwRskk08)
 
-## Materials
+## 🗒️ Materials
 **<i class="fas fa-clipboard"></i> `datadrivencv` materials**
 
 - `cv.rmd`: this is the edited CV `.rmd` document created during the workshop. To view, click [here](https://github.com/shaziaruybal/automate-cv-rmd/blob/main/cv.rmd).
